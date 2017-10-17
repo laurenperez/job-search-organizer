@@ -19,7 +19,7 @@ var jobSchema = new mongoose.Schema({
 	interview: {
 		phoneDate: String,
 		phoneNotes: String,
-		phoneStatus: String
+		phoneStatus: String,
 		personDate: String,
 		personNotes: String,
 		personStatus: String, 
