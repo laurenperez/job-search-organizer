@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from ('.Home');
-import JobData from ('.JobData');
+import JobList from './JobList';
+import JobData from './JobData';
 
 import {
   BrowserRouter as Router,
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={JobList} />
           <Route path="/job-data" component={JobData} />
         </div>
       </Router>

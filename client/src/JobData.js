@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import App from ('.App');
+import App from './App';
 
 class JobData extends Component {
   constructor(props){
@@ -18,9 +18,9 @@ class JobData extends Component {
     return (
       <div className="App">
         //all data about job[i]
-      <form>
-        //form to add info about interviews to the section above
-      </form>
+        <form>
+          //form to add info about interviews to the section above
+        </form>
       </div>
     );
   }
