@@ -26,3 +26,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* FORM COMPONENT CSS */
+
+#add-job-component {
+  padding-left: 20px
+}
+
+#add-submit {
+  margin-top: 5px;
+}
