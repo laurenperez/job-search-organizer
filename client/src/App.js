@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from ('.Home');
-import JobData from ('.JobData');
+import Home from './Home';
+import JobData from './JobData';
 
 import {
   BrowserRouter as Router,

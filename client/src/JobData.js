@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import App from ('.App');
+import App from './App';
 
 class Home extends Component {
   constructor(props){
@@ -10,7 +10,7 @@ class Home extends Component {
   }
   //form handler methods here(){
   
-}
+
 
 
 
@@ -18,9 +18,9 @@ class Home extends Component {
     return (
       <div className="App">
         //all data about job[i]
-      <form>
-        //form to add info about interviews to the section above
-      </form>
+        <form>
+          //form to add info about interviews to the section above
+        </form>
       </div>
     );
   }
