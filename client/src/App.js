@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from ('.Home');
+import JobData from ('.JobData');
+
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      jobs: []
-    }
-    //thisis the binding line necessary to keep this bound correctly
-    this.componentDidMount = this.componentDidMount.bind(this)
-  }
-  componentDidMount(){
-    fetch("/jobs")
-    .then((response) => response.json())
-    .then((response) => this.setState({jobs: response}))
-  }
-
   render() {
     return (
-      <ul className="App">
-        {this.state.jobs.map((item,index) => (<li key={index}>{item.title}</li>))}
-      </ul>
+      <Router>
+        <div className="App">
+          <Route exact path="/" component={Home} />
+          <Route path="/job-data" component={JobData} />
+        </div>
+      </Router>
     );
   }
 }
