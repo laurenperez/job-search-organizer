@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AddJob from './AddJob';
 
 class App extends Component {
   constructor(props){
@@ -8,20 +8,20 @@ class App extends Component {
     this.state = {
       jobs: []
     }
-    //thisis the binding line necessary to keep this bound correctly
-    this.componentDidMount = this.componentDidMount.bind(this)
+    //this is the binding line necessary to keep this bound correctly
+    //this.componentDidMount = this.componentDidMount.bind(this)
   }
-  componentDidMount(){
-    fetch("/jobs")
-    .then((response) => response.json())
-    .then((response) => this.setState({jobs: response}))
-  }
+  // componentDidMount(){
+  //   fetch("/jobs")
+  //   .then((response) => response.json())
+  //   .then((response) => this.setState({jobs: response}))
+  // }
 
   render() {
     return (
-      <ul className="App">
-        {this.state.jobs.map((item,index) => (<li key={index}>{item.title}</li>))}
-      </ul>
+      <div>
+        <AddJob />
+      </div>
     );
   }
 }
