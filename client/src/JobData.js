@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import App from ('.App');
 
-class Home extends Component {
+class JobData extends Component {
   constructor(props){
     super(props);
     this.state ={
@@ -9,7 +9,7 @@ class Home extends Component {
     }
   }
   //form handler methods here(){
-  
+
 }
 
 
@@ -26,4 +26,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default JobData;
