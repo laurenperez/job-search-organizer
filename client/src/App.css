@@ -48,3 +48,7 @@ h5, h6 {
 #home-add-job {
   display: inline-block;
 }
+
+.jobs {
+  list-style-type: none;
+}
