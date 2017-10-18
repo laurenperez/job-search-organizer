@@ -16,7 +16,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route exact path="/" component={JobList} />
-          <Route path="/job-data" component={JobData} />
+          <Route path="/JobData/:id" component={JobData} />
         </div>
       </Router>
     );
@@ -25,5 +25,6 @@ class App extends Component {
 
 
 
-//this is the ES6 equivalent as "module.exports = router;" that we use in the backend node exports
+
+//this is the ES6 equivalent as “module.exports = router;” that we use in the backend node exports
 export default App;

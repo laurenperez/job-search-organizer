@@ -29,8 +29,12 @@
 
 /* FORM COMPONENT CSS */
 
-#add-job-component {
-  padding-left: 20px
+body {
+  background-image: url(http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg);
+}
+
+li {
+  margin-top: 10px;
 }
 
 h5, h6 {
@@ -51,4 +55,18 @@ h5, h6 {
 
 .jobs {
   list-style-type: none;
+}
+
+
+.list-container {
+  border: 1px solid black;
+  height: 100%;
+  width: 40%;
+  margin: 20px;
+  border-radius: 25px;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  background-color: white;
 }

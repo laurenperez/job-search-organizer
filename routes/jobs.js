@@ -8,7 +8,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-      // Job.create({
+     // Job.create({
       //   title: 'Junior web developer',
       //   companyName: 'Google',
       //   location: 'Kirkland',
@@ -29,7 +29,7 @@ router.get('/', function(req, res, next) {
       //     phoneStatus: 'pass',
       //     personDate: '11-20-2017',
       //     personNotes: '',
-      //     personStatus: 'scheduled', 
+      //     personStatus: 'scheduled',
       //   }
       // }, function(err, job){
       //     if(err) return console.log(err)
@@ -44,6 +44,14 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/:id', function(req, res, next) {
+  console.log('Im in the /jobs/id route')
+  // this is finding all jobs "documents" from the noSQL database
+  Job.find({_id: req.params.id}, function (err, jobs){
+    if (err) return console.log('err');
+    res.send(jobs[0]);
+  });
+});
 
 
 module.exports = router;
