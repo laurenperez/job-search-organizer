@@ -50,7 +50,7 @@ class JobData extends Component {
         <h3>Name: {this.state.jobData.contact !== undefined ? this.state.jobData.contact.name : ''}</h3>
         <p>Email: {this.state.jobData.contact !== undefined ? this.state.jobData.contact.email : ''}</p>
         <p>Phone: {this.state.jobData.contact !== undefined ? this.state.jobData.contact.phone : ''}</p>
-        <a href="/">Back To List</a>
+        <a href="/joblist">Back To List</a>
       </div>
     );
   }

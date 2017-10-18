@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import JobList from './JobList';
 import JobData from './JobData';
+import Auth from './Auth';
+
 
 import {
   BrowserRouter as Router,
@@ -15,7 +17,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path="/" component={JobList} />
+          <Route exact path="/" component={Auth} />
+          <Route exact path="/joblist" component={JobList} />
           <Route path="/JobData/:id" component={JobData} />
         </div>
       </Router>
